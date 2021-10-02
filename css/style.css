@@ -1,0 +1,98 @@
+body{
+    background: #fff;
+}
+.our-team{
+    text-align: center;
+    overflow: hidden;
+    padding: 40px 15px 10px;
+    border: 3px solid #ebebeb;
+    transition: all 0.3s ease 0s;
+    background: #3dd0f5;
+    border-radius: 5px;
+}
+.pic img{
+    border: 3px solid #f8f8f8;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    height: 200px;
+    margin-left: 2px;
+    padding: 2px;
+}
+.post-title{
+    position: relative;
+    margin: 38px 0 18px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+.border{
+    width: 100px;
+    border-bottom: 3px solid orangered;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease 0s;
+}
+.border::after{
+    content: "";
+    width: 34px;
+    display: block;
+    position: relative;
+    top: 3px;
+    border-bottom: 3px solid orangered;
+    margin: auto;
+}
+.post{
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+.team-social{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: -100px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.team-social > li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.team-social > li:last-child{
+    margin-right: 0;
+}
+.team-social > li > a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover{
+    background: orangered;
+    margin-bottom: 30px;
+}
+.our-team:hover .pic img{
+    border-color: #fff;
+}
+.our-team:hover .border{
+    border-color: #f43772;
+}
+.our-team:hover .border::after{
+    border-color: #fff;
+}
+.our-team:hover .post{
+    margin-top: 0;
+    opacity: 0;
+}
+.our-team:hover .team-social{
+    opacity: 1;
+    bottom: 0;
+}
